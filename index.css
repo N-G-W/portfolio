@@ -1,0 +1,252 @@
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variables */
+:root{
+    /* color */
+    --background-color: rgb(17, 17, 17);
+    --midground-color: #393E46;
+    --foreground-color: #00ADB5 ;
+    --highlight-color: #EEEEEE;
+    --text-color: #d9d9d9;
+
+    /* Typography*/
+    --roboto: "Roboto",sans-serif;
+
+}
+ 
+ /* 
+:first-child
+:last-child
+:empty
+
+::marker
+::first-letter
+::first-line
+::selection */
+
+/* Body bgcolor and font */
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--roboto);
+}
+
+/* Nav container to push everything in the middle */
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(0.5rem);
+}
+/* The nav section */
+nav{
+    max-width: 65%;
+    display: flex;
+    position: sticky;
+    flex: 1;
+    margin: 0.2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.nav-logo{
+    height: 2rem;
+    width: 2rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.nav-icons {
+    flex: 1;
+    justify-content: space-around;
+}
+.nav-icons>.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    /* background-color: grey;
+    border-radius: 0.2rem; */
+}
+
+.nav-logo-container{
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+} 
+
+
+.nav-main{
+    display: flex;
+    justify-content: flex-start;
+    flex:3;
+}
+/* Main container to push content inside the main section */
+
+.main-container {
+    max-width: 60%;
+    margin: auto;
+}
+
+/* hero section */
+.hero{
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: start;
+    gap: 1rem;
+    /* background-color: lightgrey; */
+}
+
+.hero > .css-image > img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.hero>.about-me-section{
+    text-align: right;
+    max-width: 40%;
+}
+
+.about-me-section>h2{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* "smile and wave boys" - skipper */
+.about-me-section>h2>span.wave{
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    animation-duration: 400ms, 10000000ms;
+    animation-name: hand-wave, remove-hand;
+    animation-iteration-count: 3, infinite;
+    animation-direction: reverse;
+    animation-timing-function:linear;
+    animation-delay: 0.5s, 3s;
+}
+
+@keyframes hand-wave {
+    from {
+        transform-origin: bottom center;
+        transform:   rotate(0deg) scale(1);
+    }
+
+    25%{
+        transform-origin: bottom center;
+        transform:  rotate(30deg) scale(1.05);
+    }
+
+    50%{
+        transform-origin: bottom center;
+        transform:  rotate(0deg) scale(1);
+    }
+
+    75%{
+        transform-origin: bottom center;
+        transform: rotate(-30deg) scale(1.05);
+    }
+    to {
+        transform-origin: bottom center;
+        transform:  rotate(0deg) scale(1);
+    }
+}
+
+@keyframes remove-hand{
+    from{
+        display: none;
+    }
+
+    to{
+display: none;
+    }
+}
+
+/* hero section */
+
+
+
+/* Media Query */
+@media (width<=1000px){
+    
+        .main-container {
+            flex: 1;
+            max-width: 80%;
+        }
+
+}
+
+@media (width<= 750px){
+    .main-container {
+            flex: 1;
+            max-width: 85%;
+        }
+    .nav-main{
+            display: none;
+        }
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero>.css-image>img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .hero>.about-me-section {
+        text-align: center;
+        max-width: 60%;
+    }
+
+    .about-me-section>h2 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+
+@media (width<= 500px){
+    .main-container {
+            flex: 1;
+            max-width: 90%;
+        }
+
+    .hero>.css-image>img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .hero>.about-me-section {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .about-me-section>h2 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+}
+
+
