@@ -2,18 +2,21 @@
 *{
     margin: 0px;
     padding: 0px;
+    scrollbar-width: none;
 }
 /* css variables */
 :root{
     /* color */
     --background-color: rgb(17, 17, 17);
     --midground-color: #393E46;
+    --lighter-midground-color: #d5d5d5;
     --foreground-color: #00ADB5 ;
     --highlight-color: #EEEEEE;
     --text-color: #d9d9d9;
 
     /* Typography*/
     --roboto: "Roboto",sans-serif;
+    --montserrat: "Montserrat",sans-serif;
 
 }
  
@@ -109,6 +112,7 @@ li{
 /* hero section starts here*/
 .hero{
     margin-top: 3rem;
+    margin-bottom: 6rem;
     padding: 2rem;
     display: flex;
     flex-direction: row-reverse;
@@ -234,15 +238,25 @@ display: none;
 /* hero section ends here*/
 
 /* project section starts here */
-
+.project-heading{
+    color: var(--background-color);
+    text-align: center;
+    padding: 2rem;
+    font-family: var(--montserrat);
+    font-size: 3rem;
+    font-weight: 900;
+}
 section.project-section{
     /* background: linear-gradient(var(--background-color) 0%,var(--midground-color) 40%,var(--midground-color) 60%,var(--background-color) 100%); */
-    background: linear-gradient(180deg in oklab, var(--background-color), var(--midground-color),var(--background-color));
-    margin: 1rem;
+    /* background: linear-gradient(180deg in oklab, var(--background-color), var(--midground-color),var(--background-color)); */
+    background-color: var(--highlight-color);
+    padding-bottom: 2rem;
+    font-family: var(--montserrat);
+    color: var(--background-color);
 }
 
 div.card-container{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
     display: flex;
     justify-content: space-around;
@@ -251,11 +265,11 @@ div.card-container{
 }
 div.card{
     display: flex;
-    background-color: var(--midground-color);
+    background-color: var(--lighter-midground-color);
     flex-direction: column;
     border-radius: 40px;
     max-width: 300px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -281,14 +295,14 @@ div.card:hover{
 
 .card> img.card-image{
     width: 100%;
-    max-height: max(150px, 100%);
+    max-height: max(150px, 50%);
     object-fit: cover;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
 
 .card>.card-text-content{
-    min-height: max(100px,50%);
+    max-height: max(100px,50%);
     text-align: center;
 }
 .card>.card-text-content>*{
@@ -304,6 +318,8 @@ div.card:hover{
 .card-text-content> .card-content{
     font-size: 1rem;
 }
+/* Project Section ends here */
+
 
 /* Media Query */
 @media (width<=1000px){
