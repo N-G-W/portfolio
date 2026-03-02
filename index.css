@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     scrollbar-width: none;
+    /* overflow: hidden; */
 }
 /* css variables */
 :root{
@@ -258,6 +259,8 @@ section.project-section{
 div.card-container{
     margin-top: 2rem;
     margin-bottom: 5rem;
+    max-width: 90%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -317,6 +320,7 @@ div.card:hover{
 
 .card-text-content> .card-content{
     font-size: 1rem;
+    font-weight: 600;
 }
 /* Project Section ends here */
 
