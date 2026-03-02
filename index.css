@@ -42,14 +42,15 @@ body{
     position: sticky;
     top: 0px;
     backdrop-filter: blur(0.5rem);
+    z-index: 5;
 }
-/* The nav section */
+/* The nav section starts here*/
 nav{
     max-width: 65%;
     display: flex;
     position: sticky;
     flex: 1;
-    margin: 0.2rem;
+    margin: 1rem;
     justify-content: space-around;
     align-items: center;
 }
@@ -96,14 +97,16 @@ li{
     justify-content: flex-start;
     flex:3;
 }
+/* Navigation sections ends here */
+
 /* Main container to push content inside the main section */
 
 .main-container {
-    max-width: 60%;
+    max-width: 65%;
     margin: auto;
 }
 
-/* hero section */
+/* hero section starts here*/
 .hero{
     margin-top: 3rem;
     padding: 2rem;
@@ -117,15 +120,17 @@ li{
 .hero> .css-image {
     position: relative;
 }
+
+/* hero section rotating border */
 .border-animation {
     position: absolute;
-    top: -8px;
-    left: -8px;
+    top: -0.35rem;
+    left: -0.35rem;
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
     border-color: var(--foreground-color);
-    border-width: 1rem;
+    border-width: 0.7rem;
     border-style:dashed;
     animation-duration: 3s;
     animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -141,19 +146,22 @@ li{
         transform: rotate(0deg);
         border-color: var(--midground-color);
         border-style: dashed;
-        border-width: 0.5rem;    }
+        /* border-width: 0.5rem; */
+        }
     50% {
         transform-origin: center;
             transform: rotate(180deg);
             border-color: var(--foreground-color);
             border-style: solid;
-            border-width: 0.8rem;    }
+            /* border-width: 0.8rem;    */
+         }
     to{
         transform-origin: center;
         transform: rotate(360deg);
         border-color: var(--midground-color);
         border-style: dashed;
-        border-width: 0.5rem;    }
+        /* border-width: 0.5rem;    */
+     }
 }
 
 .hero > .css-image > img{
@@ -223,14 +231,20 @@ display: none;
     }
 }
 
-/* hero section */
+/* hero section ends here*/
+
+/* project section starts here */
+
+/* section.project-section{
+    background-color: var(--midground-color);
+} */
 
 
 
 /* Media Query */
 @media (width<=1000px){
     
-        .main-container {
+        .main-container,nav {
             flex: 1;
             max-width: 80%;
         }
@@ -238,7 +252,7 @@ display: none;
 }
 
 @media (width<= 750px){
-    .main-container {
+    .main-container, nav {
             flex: 1;
             max-width: 85%;
         }
@@ -266,10 +280,18 @@ display: none;
         font-size: 2rem;
         font-weight: 900;
     }
+
+    .border-animation {
+        width: 15rem;
+        height: 15rem;
+    border-width: 0.5rem;
+    top: -0.25rem;
+    left: -0.25rem;
+}
 }
 
 @media (width<= 500px){
-    .main-container {
+    .main-container,nav {
             flex: 1;
             max-width: 90%;
         }
@@ -287,6 +309,14 @@ display: none;
     .about-me-section>h2 {
         font-size: 1.5rem;
         font-weight: 800;
+    }
+
+    .border-animation {
+        width: 10rem;
+        height: 10rem;
+        border-width: 0.3rem;
+        top: -0.15rem;
+        left: -0.15rem;
     }
 
 }
