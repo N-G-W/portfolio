@@ -255,6 +255,28 @@ section.project-section{
     font-family: var(--montserrat);
     color: var(--text-color);
 }
+section.project-section .card{
+    animation-name: fade-in-animation;
+    animation-timing-function: ease-in;
+    animation-delay: 0ms;
+    animation-timeline: view(block 100px 0%);
+}
+
+@keyframes fade-in-animation{
+    from{
+        transform: translateY(300px);
+        opacity: 10%;
+    }
+    
+    50%{
+    transform: translateY(0px);
+        opacity: 100%;
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
 
 div.card-container{
     margin-top: 2rem;
