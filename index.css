@@ -282,6 +282,11 @@ div.card:hover{
     animation-name: levitate;
     animation-iteration-count: 1;
     animation-delay: 0ms;
+    cursor:pointer;
+}
+
+div.card:active{
+    opacity: 70%;
 }
 
 @keyframes levitate{
@@ -324,6 +329,39 @@ div.card:hover{
 }
 /* Project Section ends here */
 
+/* Resume section */
+section.resume{
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    font-family: var(--montserrat);
+    font-weight: 900;
+    height: 500px;
+}
+
+ div.wave-text > *{
+    display: inline-flex;
+    max-width: inherit;
+    animation-duration: 500ms;
+    animation-name: text-wave;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0ms;
+}
+
+@keyframes text-wave{
+    from{
+        color: #00ADB5;
+        transform: translateY(0px);
+    }
+
+    to{
+        color: #393E46;
+        transform: translateY(20px);
+    }
+}
+/* Resume section enmds here */
 
 /* Media Query */
 @media (width<=1000px){
