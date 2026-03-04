@@ -255,6 +255,12 @@ section.project-section{
     font-family: var(--montserrat);
     color: var(--text-color);
 }
+
+a,a.card-link:link, a.card-link:hover, a.card-link:visited{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 section.project-section .card{
     animation-name: fade-in-animation;
     animation-timing-function: ease-in;
@@ -264,7 +270,7 @@ section.project-section .card{
 
 @keyframes fade-in-animation{
     from{
-        transform: translateY(300px);
+        transform: translateY(150px);
         opacity: 10%;
     }
     
@@ -299,7 +305,7 @@ div.card{
 }
 
 div.card:hover{
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     animation-duration: 500ms;
     animation-name: levitate;
     animation-iteration-count: 1;
@@ -318,9 +324,9 @@ div.card:active{
     50%{
         transform: translateY(-10px);
     }
-    to{
+    /* to{
         transform: translateY(0px);
-    }
+    } */
 }
 
 .card> img.card-image{
