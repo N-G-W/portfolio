@@ -15,6 +15,13 @@
     --highlight-color: #EEEEEE;
     --text-color: #d9d9d9;
 
+    /* the blog/project pages section */
+    /* THE FIRE PALETTE  */
+    --foreground-red:#F63049;
+    --midground-red:#D02752;
+    --background--red:#8A244B;
+    --midnight-red:#111F35;
+
     /* Typography*/
     --roboto: "Roboto",sans-serif;
     --montserrat: "Montserrat",sans-serif;
@@ -50,7 +57,7 @@ body{
 }
 /* The nav section starts here*/
 nav{
-    max-width: 65%;
+    max-width: 70%;
     display: flex;
     position: sticky;
     flex: 1;
@@ -106,7 +113,7 @@ li{
 /* Main container to push content inside the main section */
 
 .main-container {
-    max-width: 65%;
+    max-width: 70%;
     margin: auto;
 }
 
@@ -525,7 +532,7 @@ footer{
 @media (width<= 500px){
     .main-container,nav {
             flex: 1;
-            max-width: 90%;
+            max-width: 100%;
         }
 
     .hero>.css-image>img {
@@ -554,3 +561,33 @@ footer{
 }
 
 
+/* Other pages sections start from here*/
+
+.blog-header{
+    max-width: 50%;
+    margin-top: 5rem;
+    font-family: var(--roboto);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.blog-subheading{
+    margin-top: 2rem;
+    font-family: var(--roboto);
+    font-weight: 300;
+    opacity: 70%;
+    font-style: italic;
+}
+.sidebar-divide-container{
+    display: flex;
+    margin-top: 10rem;
+    gap: 3rem;
+}
+
+.blog-content-container{
+    flex: 2;
+}
+
+.sidebar-container{
+    flex: 1;
+}
