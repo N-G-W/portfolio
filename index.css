@@ -459,6 +459,18 @@ div.outline-card>img.outline-card-image{
 }
 /* minor project section ends here */
 
+/* Fpooter starts here*/
+footer{
+    text-align: center;
+    padding: 5rem;
+    background-color: #d9d9d9;
+    color: var(--background-color);
+    font-family: var(--montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+}
+/* footer ends ehre */
 
 /* Media Query */
 @media (width<=1000px){
