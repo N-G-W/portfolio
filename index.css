@@ -563,7 +563,10 @@ footer{
 
 /* Other pages sections start from here*/
 
-.blog-header{
+/* This is the blog section */
+
+/* Containers and layout css */
+.blog-title{
     max-width: 50%;
     margin-top: 5rem;
     font-family: var(--roboto);
@@ -571,7 +574,7 @@ footer{
     font-size: 2rem;
 }
 
-.blog-subheading{
+.blog-subtitle{
     margin-top: 2rem;
     font-family: var(--roboto);
     font-weight: 300;
@@ -591,3 +594,88 @@ footer{
 .sidebar-container{
     flex: 1;
 }
+
+/* individual content piece style */
+
+.blog-subheading{
+    margin-top: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: var(--montserrat);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    color: var(--foreground-red);
+}
+
+.blog-subsubheading{
+    padding-top: 1rem ;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.blog-paragraph{
+    font-size: large;
+    color: var(--lighter-midground-color);
+        padding-bottom: 2rem;
+}
+
+.blog-image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-image-small{
+    width: 50%;
+    height: auto;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.blog-image-medium{
+    width: 70%;
+    height: auto;
+    border-radius: 0.6rem;
+    margin: 2rem;
+}
+
+.blog-image-large {
+    width: 90%;
+    height: auto;
+    border-radius: 0.3rem;
+    margin: 3rem;
+}
+
+.table-of-contents{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: sticky;
+    top: 100px;
+
+}
+
+.toc-heading{
+    font-size: 0.9rem;
+    padding: 1rem;
+    color: grey;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.toc-list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.toc-items{
+    padding: 0.4rem 1rem;
+    color: grey;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* blog page style ends */
