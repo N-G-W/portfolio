@@ -371,15 +371,55 @@ div.card:active, div.outline-card:active{
 
 /* Resume section */
 section.resume{
+    position: relative;
+    display: flex;
     text-align: center;
+    justify-content: space-between;
     padding: 2rem;
+    
+}
+
+.resume-ad{
+    position: absolute;
+    left: -5rem;
+    top: 1rem;
+    background-color: var(--lighter-midground-color);
+    color: var(--background-color);
+    padding: 3rem;
+    max-width: 10rem;
+    border-radius: 1rem 1rem 1rem 0rem;
+    animation-name: inner-circle;
+    animation-timeline: view(block auto auto);
+}
+
+@keyframes inner-circle{
+    from{
+        transform-origin: bottom left;
+        transform: rotate(-30deg) translate(-5rem,0rem);
+    }
+
+    25%{
+        transform-origin: bottom left;
+        transform: rotate(-15deg) translate(3rem, 0rem);
+    }
+    50% {
+        transform-origin: bottom left;
+        transform: rotate(0deg) translate(6rem, 0rem);
+    }
+    to{
+        transform-origin: bottom left;
+            transform: rotate(0deg) translate(6rem, 0rem);
+    }
+}
+
+span{
+    padding: 0.6rem;
+}
+ div.wave-text > *{
     font-size: 3.5rem;
     font-family: var(--montserrat);
     font-weight: 900;
     /* height: 500px; */
-}
-
- div.wave-text > *{
     display: inline-flex;
     max-width: inherit;
     animation-duration: 500ms;
