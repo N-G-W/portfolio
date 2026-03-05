@@ -404,7 +404,7 @@ section.resume{
 /* Resume section enmds here */
 
 /* minor project sections starts here */
-section.minor-projects{
+.minor-projects{
     max-width: 75%;
     margin: auto;
     padding: 4rem;
@@ -412,7 +412,14 @@ section.minor-projects{
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.minor-project-heading{
+    text-align: center;
+    margin-top: 3rem;
+    font-family: var(--montserrat);
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
 div.outline-card{
     border: 2px solid var(--highlight-color);
     border-radius: 10px;
