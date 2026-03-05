@@ -380,6 +380,7 @@ section.resume{
 }
 
 .resume-ad{
+    z-index: 1;
     position: absolute;
     left: -5rem;
     top: 1rem;
@@ -389,6 +390,7 @@ section.resume{
     max-width: 10rem;
     border-radius: 1rem 1rem 1rem 0rem;
     animation-name: inner-circle;
+    animation-timing-function: ease-in;
     animation-timeline: view(block auto auto);
 }
 
@@ -401,6 +403,10 @@ section.resume{
     25%{
         transform-origin: bottom left;
         transform: rotate(-15deg) translate(3rem, 0rem);
+    }
+    45% {
+        transform-origin: bottom left;
+        transform: rotate(1deg) translate(6rem, 0rem);
     }
     50% {
         transform-origin: bottom left;
