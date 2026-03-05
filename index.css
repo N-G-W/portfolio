@@ -421,11 +421,10 @@ section.resume{
 span{
     padding: 0.6rem;
 }
- div.wave-text > *{
+ /* div.wave-text > *{
     font-size: 3.5rem;
     font-family: var(--montserrat);
     font-weight: 900;
-    /* height: 500px; */
     display: inline-flex;
     max-width: inherit;
     animation-duration: 500ms;
@@ -445,6 +444,37 @@ span{
     to{
         color: #393E46;
         transform: translateY(20px);
+    }
+} */
+
+div.wave-text>* {
+    font-size: 3.5rem;
+    font-family: var(--montserrat);
+    font-weight: 900;
+    display: inline-flex;
+    max-width: inherit;
+    animation-duration: 500ms;
+    animation-name: text-wave;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0ms;
+}
+
+@keyframes text-wave {
+    from {
+        color: var(--midnight-red);
+    }
+    33%{
+        color: var(--background--red) ;
+    }
+
+    66%{
+        color: var(--midground-red);
+    }
+
+    to {
+        color: var(--foreground-red);
     }
 }
 /* Resume section enmds here */
