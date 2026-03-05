@@ -766,7 +766,7 @@ footer{
 .blog-paragraph{
     font-size: large;
     color: var(--lighter-midground-color);
-        padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .blog-image-container{
@@ -826,4 +826,35 @@ footer{
     font-size: 0.9rem;
 }
 
+hr.resume-divider{
+    border: none;
+    margin: 0.8rem 0rem;
+    margin-top: -1.5rem;
+    border-top: 2px solid var(--midground-color);
+}
+
+ul.resume-list{
+    list-style: none;
+    display: block;
+    padding: none;
+}
+
+ul.resume-list>li{
+    padding: 0.2rem 0rem;
+}
+
+ul.point-list {
+    list-style: circle inside;
+    display: block;
+}
+ul.point-list>li{
+    list-style: inherit;
+}
+
+.resume-subsubheading {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
 /* blog page style ends */
