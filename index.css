@@ -615,6 +615,36 @@ div.outline-card>img.outline-card-image{
 }
 /* minor project section ends here */
 
+/* hobbies section starts here */
+section.hobbies{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 3rem 0rem;
+}
+
+h2.hobbies-heading{
+    /* text-align: center; */
+    margin-top: 4rem;
+    font-family: var(--montserrat);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0rem;
+    align-self: center;
+}
+
+h3.hobbies-subheading{
+    text-align: left;
+    align-self: flex-start;
+    margin: 2rem 0rem;
+}
+
+.platformer-game-image{
+    width: 100%;
+    height: auto;
+}
+/* hobbies section ends here */
+
 /* Fpooter starts here*/
 footer{
     text-align: center;
